@@ -1,0 +1,119 @@
+body {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+.subtitle {
+    color: purple;
+    font-size: 20px;
+    text-align: left;
+    text-indent: 200px;
+    padding-top: 50px;
+}
+
+
+
+
+.exam-name1 {
+    width: 1120px;
+    height: 60px;
+    text-align: left;
+    text-indent: 0px;
+    padding-top: 25px;
+    border-bottom: 1px solid;
+    margin: 0% auto;
+    
+}
+.exam-name1 a {
+    font-size: 14px;
+    color: #414141;
+    border-right: 2px solid grey;
+    margin-right: 20px
+}
+
+
+
+
+
+
+
+
+.exam-name2 {
+    width: 1120px;
+    height: 98px;
+    text-align: justify;
+    text-indent: 0px;
+    padding-top: 25px;
+    border-bottom: 1px solid;
+    margin: 0% auto;
+}
+
+.exam-name2 a {
+    font-size: 14px;
+    color: #414141;
+    border-right: 2px solid grey;
+    margin-right: 20px
+}
+.exam2-line2{
+    padding-top: 15px;
+}
+
+
+
+
+
+
+.exam-name3 {
+    width: 1120px;
+    height: 170px;
+    text-align: justify;
+    text-indent: 0px;
+    padding-top: 25px;
+    border-bottom: 1px solid;
+    margin: 0% auto;
+}
+.exam-name3 a {
+    font-size: 14px;
+    color: #414141;
+    border-right: 2px solid grey;
+    margin-right: 20px
+}
+.exam3-line2{
+    padding-top: 15px;
+}
+.exam3-line3{
+    padding-top: 15px;
+}
+.exam3-line4{
+    padding-top: 15px;
+}
+.exam2-line5{
+    padding-top: 15px;
+}
+
+
+
+
+.exam-name4 {
+    width: 1120px;
+    height: 60px;
+    text-align: left;
+    text-indent: 0px;
+    padding-top: 25px;
+    border-bottom: 1px solid;
+    margin: 0% auto;
+}
+.exam-name4 a {
+    font-size: 14px;
+    color: #414141;
+    border-right: 2px solid grey;
+    margin-right: 20px
+}
+
+a:hover {
+    color: #FF8000;
+}

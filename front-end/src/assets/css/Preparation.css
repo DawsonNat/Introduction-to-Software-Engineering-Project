@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+.subtitle {
+    color: purple;
+    font-size: 20px;
+    text-align: left;
+    text-indent: 200px;
+    padding-top: 50px;
+}
+
+.pr_content {
+    width: 1000px;
+    height: 700px;
+    text-align: left;
+    text-indent: 0;
+    padding-top: 25px;
+    margin: 0% auto;
+}
+.pr_content p {
+    margin: 20px;
+    border-bottom: 1px dashed;
+}
+.pr_content p a {
+    color: #000;
+}_
+.pr_content p a:hover {
+    color: #FF8000;
+}
+.pr_content p span{
+    float: right;
+    color: dimgray;
+}
+
+.pagination {
+
+}
+.pagination a {
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination a:hover {
+    color: #FF8000;
+}
+
+.current-page {
+    font-weight: bold;
+}
+    
