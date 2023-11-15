@@ -18,14 +18,8 @@ export default {
   },
   methods: {
     verifyRetusername() {
-      const reg = /^[a-zA-Z0-9-]{8}$/
-      if (!reg.test(this.retusername)) {
-        this.retusernameErrorMsg = '请输入8位数账号!';
-        return false;
-      } else {
-        this.retusernameErrorMsg = '';
-        return true;
-      }
+      this.retusernameErrorMsg = '';
+      return true;
     },
     verifyRetbirthday() {
       const reg = /^\d{4}\/\d{1,2}\/\d{1,2}$/
@@ -42,7 +36,7 @@ export default {
     },
     retrieve() {
       if (!this.verifyRetusername()) {
-        alert('请输入正确的账号');
+        alert('请输入正确的用户名');
         return;
       }
       if (!this.verifyRetbirthday()) {
@@ -86,7 +80,7 @@ export default {
   <div class="loginbox">
     <div class="login-box">
       <h2>找回密码</h2>
-      <input type="text" v-model="retusername" placeholder="输入账号" @input="verifyRetusername">
+      <input type="text" v-model="retusername" placeholder="输入用户名" @input="verifyRetusername">
       <span class="msg">{{ retusernameErrorMsg }}</span>
       <input type="text" v-model="retbirthday" placeholder="输入你的生日，格式为‘年/月/日’" @input="verifyRetbirthday">
       <span class="msg">{{ retbirthdayErrorMsg }}</span>

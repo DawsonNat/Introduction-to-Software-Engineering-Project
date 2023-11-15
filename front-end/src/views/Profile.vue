@@ -10,8 +10,6 @@ export default {
       name: '',
       gender: '',
       age: '',
-      city: '',
-      university: '',
       phone: '',
       email: '',
       exams: '',
@@ -60,14 +58,6 @@ export default {
         this.cityError = '';
       }
     },
-    validateUniversity() {
-      const reg = /^[a-zA-Z\u4e00-\u9fa5]+$/; // 只能输入文字
-      if (!reg.test(this.university)) {
-        this.universityError = '请输入正确的大学格式';
-      } else {
-        this.universityError = '';
-      }
-    },
     validatePhone() {
       const reg = /^[a-zA-Z0-9]+$/; // 只能输入数字+字母
       if (!reg.test(this.phone)) {
@@ -109,10 +99,6 @@ export default {
         alert('请填写正确的城市');
         return false;
       }
-      if (!this.university) {
-        alert('请填写正确的大学');
-        return false;
-      }
       if (!this.phone) {
         alert('请填写正确电话号码');
         return false;
@@ -148,11 +134,6 @@ export default {
         return;
       }
 
-      if (!this.validateUniversity()) {
-        alert(this.universityError);
-        return;
-      }
-
       if (!this.validatePhone()) {
         alert(this.phoneError);
         return;
@@ -174,7 +155,6 @@ export default {
         gender: this.gender,
         age: this.age,
         city: this.city,
-        university: this.university,
         phone: this.phone,
         email: this.email,
         exams: this.exams
@@ -217,8 +197,6 @@ export default {
         <span class="msg">{{ ageError }}</span>
         <label><input type="text" v-model="city" placeholder="输入所在城市" @input="validateCity"></label><br>
         <span class="msg">{{ cityError }}</span>
-        <label><input type="text" v-model="university" placeholder="输入大学" @input="validateUniversity"></label><br>
-        <span class="msg">{{ universityError }}</span>
         <label><input type="text" v-model="phone" placeholder="输入电话号码" @input="validatePhone"></label><br>
         <span class="msg">{{ phoneError }}</span>
         <label><input type="email" v-model="email" placeholder="输入邮箱" @input="validateEmail"></label><br>

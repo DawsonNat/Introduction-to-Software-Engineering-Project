@@ -21,14 +21,8 @@ export default {
   },
   methods: {
     verifyRegusername() {
-      const reg = /^[a-zA-Z0-9-]{8}$/;
-      if (!reg.test(this.regusername)) {
-        this.regusernameErrorMsg = '请输入8位数账号!';
-        return false;
-      } else {
-        this.regusernameErrorMsg = '';
-        return true;
-      }
+      this.regusernameErrorMsg = '';
+      return true;
     },
     verifyRegpassword() {
       const reg = /^[a-zA-Z0-9-]{8,16}$/;
@@ -64,7 +58,7 @@ export default {
     },
     register() {
       if (!this.verifyRegusername()) {
-        alert('请输入正确格式的账号');
+        alert('请输入用户名');
         return;
       }
       if (!this.verifyRegpassword()) {
@@ -114,8 +108,8 @@ export default {
   </div>
   <div class="loginbox">
     <div class="login-box">
-      <h2>账号注册</h2>
-      <input type="text" v-model="regusername" placeholder="输入账号(格式为8位数字+字母)" @input="verifyRegusername">
+      <h2>用户名注册</h2>
+      <input type="text" v-model="regusername" placeholder="输入用户名" @input="verifyRegusername">
       <span class="msg">{{ regusernameErrorMsg }}</span>
       <input type="password" v-model="regpassword" placeholder="输入密码(格式为8~16位数字+字母)" @input="verifyRegpassword">
       <span class="msg">{{ regpasswordErrorMsg }}</span>
