@@ -17,14 +17,9 @@ export default {
   },
   methods: {
     verifyUsername() {
-      const reg = /^[a-zA-Z0-9-]{8,8}$/;
-      if (!reg.test(this.username)) {
-        this.usernameError = '请输入8位数账号!';
-        return false;
-      } else {
-        this.usernameError = '';
-        return true;
-      }
+      // 不限制用户名格式
+      this.usernameError = '';
+      return true;
     },
     verifyPassword() {
       const reg = /^[a-zA-Z0-9-]{8,16}$/;
@@ -50,7 +45,7 @@ export default {
     },
     login() {
       if (!this.verifyUsername()) {
-        alert('请输入正确的账号');
+        alert('请输入正确的用户名');
         return;
       }
       if (!this.verifyPassword()) {
@@ -94,8 +89,8 @@ export default {
     </div>
     <div class="loginbox">
       <div class="login-box">
-        <h2>账号登录</h2>
-        <input type="text" v-model="username" placeholder="输入账号" @input="handleUsernameInput">
+        <h2>用户名登录</h2>
+        <input type="text" v-model="username" placeholder="用户名账号" @input="handleUsernameInput">
         <span class="msg">{{ usernameError }}</span>
         <input type="password" v-model="password" placeholder="输入密码" @input="handlePasswordInput">
         <span class="msg">{{ passwordError }}</span>
