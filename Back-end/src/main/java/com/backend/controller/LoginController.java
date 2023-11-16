@@ -6,6 +6,7 @@ import com.backend.utils.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,6 +17,7 @@ import java.util.Map;
 
 @Slf4j // 该注解用于记录日志
 @RestController
+@CrossOrigin // 该注解允许该控制器里的方法都允许跨域（可以使用该注解来简单解决跨域问题）
 public class LoginController {
     @Autowired
     private UserService userService;
