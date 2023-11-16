@@ -58,18 +58,18 @@ export default {
       }
 
       // 发送POST请求到后端服务
-      axios.post('/login', {
+      axios.post('http://localhost:8888/login', {
         username: this.username,
         password: this.password
       })
           .then(response => {
-            if (response.data.success) {
-              // 如果登录成功，跳转到home界面
+            if (response.data.code === 1) {
+              // 登录成功
               this.$router.push('/');
               alert('登录成功');
             } else {
-              // 如果登录失败，显示错误信息
-              alert(response.data.message);
+              // 登录失败
+              alert(response.data.msg);
             }
           })
           .catch(error => {
