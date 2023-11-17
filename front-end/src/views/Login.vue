@@ -65,9 +65,7 @@ export default {
           .then(response => {
             if (response.data.code === 1) {
               // 登录成功
-              this.$router.push('/').then(() => {
-                alert('登录成功');
-              });
+              this.$router.push('/');
             } else {
               // 登录失败
               alert(response.data.msg);
