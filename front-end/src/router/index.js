@@ -8,6 +8,17 @@ import Login from "../views/Login.vue"
 import Register from "../views/Register.vue"
 import Retrieve from '../views/Retrieve.vue'
 import Profile from '../views/Profile.vue'
+import inside from '../views/inside.vue'
+import inside2 from '../views/inside2.vue'
+import inside3 from '../views/inside3.vue'
+import inside4 from '../views/inside4.vue'
+import inside5 from '../views/inside5.vue'
+import inside6 from '../views/inside6.vue'
+import inside7 from '../views/inside7.vue'
+import inside8 from '../views/inside8.vue'
+import inside9 from '../views/inside9.vue'
+import inside10 from '../views/inside10.vue'
+import nomore from '../views/nomore.vue'
 
 const routes = [
   {
@@ -54,7 +65,64 @@ const routes = [
     path: '/Profile',
     name: 'Profile',
     component: Profile
+  },
+  {
+    path: '/inside',
+    name: 'inside',
+    component: inside
+  },
+  {
+    path: '/inside2',
+    name: 'inside2',
+    component: inside2
+  },
+  {
+    path: '/inside3',
+    name: 'inside3',
+    component: inside3
+  },
+  {
+    path: '/inside4',
+    name: 'inside4',
+    component: inside4
+  },
+  {
+    path: '/inside5',
+    name: 'inside5',
+    component: inside5
+  },
+  {
+    path: '/inside6',
+    name: 'inside6',
+    component: inside6
+  },
+  {
+    path: '/inside7',
+    name: 'inside7',
+    component: inside7
+  },
+  {
+    path: '/inside8',
+    name: 'inside8',
+    component: inside8
+  },
+  {
+    path: '/inside9',
+    name: 'inside9',
+    component: inside9
+  },
+  {
+    path: '/inside10',
+    name: 'inside10',
+    component: inside10
+  },
+  {
+    path: '/nomore',
+    name: 'nomore',
+    component: nomore
   }
+
+
 ]
 
 const router = createRouter({

@@ -17,78 +17,59 @@ export default {
     <div class="subtitle">备考方案</div>
     <div class="pr_content">
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside">如何备考GRE?</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside2">雅思备考方案</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside3">四级考试如何准备呢</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside4">托福110+是种什么体验？</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside5">JLPT备考分享</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside6">教育部书画等级考试</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside7">三战雅思终上7.5</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside8">计算机二级备考指南</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside9">教师资格证复习资料、备考方法</a>
         <span>2023-10-20</span>
       </p>
       <p>
-        <a href="#">备考一天拿下雅思8.0</a>
+        <a href="inside10">德福备考经验：5444之路</a>
         <span>2023-10-20</span>
       </p>
-      <p>
-        <a href="#">备考一天拿下雅思8.0</a>
-        <span>2023-10-20</span>
-      </p>
-      <p>
-        <a href="#">备考一天拿下雅思8.0</a>
-        <span>2023-10-20</span>
-      </p>
-      <p>
-        <a href="#">备考一天拿下雅思8.0</a>
-        <span>2023-10-20</span>
-      </p>
-      <p>
-        <a href="#">备考一天拿下雅思8.0</a>
-        <span>2023-10-20</span>
-      </p>
-      <p>
-        <a href="#">备考一天拿下雅思8.0</a>
-        <span>2023-10-20</span>
-      </p>
+
 
     </div>
     <div>
       <div class="pagination">
-        <a href="#">最前</a>
+        <a href="Preparation">最前</a>
         <a href="#">上一页</a>
         <a href="#" class="current-page" style="color: #FF8000;">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">下一页</a>
-        <a href="#">最后</a>
+        <a href="nomore">2</a>
+        <a href="nomore">3</a>
+        <a href="nomore">4</a>
+        <a href="nomore">5</a>
+        <a href="nomore">下一页</a>
+        <a href="nomore">最后</a>
       </div>
     </div>
   </div>

@@ -1,0 +1,87 @@
+.inside3-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/备考背景图5.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.inside3-container {
+    position: relative;
+    /* background-color:#dcdfde; */
+    background-color: #ffffff;
+    max-width: 1000px;
+    height: 100%;
+    margin: 100px auto 0; /* 添加了上边距 */
+    padding: 20px;
+    text-align: center;
+    /* background: url(./内容背景1.jpg); */
+    border-radius: 10px; /* 圆角边框 */
+}
+
+h1 {
+    font-size: 45px;
+    font-style: italic; /* 斜体 */
+    color: black; /* 黑色字体 */
+    position: relative;
+    display: inline-block; /* 使得伪元素宽度只占用文本宽度 */
+    text-shadow: 0 5px 10px rgba(117, 15, 225, 0.552); /* 添加粉色字体重影效果 */
+
+}
+.author {
+    text-indent: 350px;
+}
+
+.name {
+    color: green;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.line{
+    display: inline-block;
+    width: 200px;
+}
+
+p {
+    text-align: left;
+    font-size: 18px;
+    color:dimgray;
+}
+.subtitle {
+    text-align: left;
+}
+.keyPoint {
+    color: black;
+    display: inline-block;
+    
+}
+
+.turnyellow {
+    display: inline-block;
+    background-color: yellow;
+}
+.highlight {
+  background-color: rgba(15, 225, 89, 0.552); 
+  font-weight: bold;
+}
+.highlight2 {
+    background-color: rgba(243, 157, 228, 0.873); 
+    font-weight: bold;
+}
+.highlight3 {
+    background-color: rgba(132, 207, 225, 0.873); 
+    font-weight: bold;
+}
+.highlight4 {
+    background-color: yellow;
+    font-weight: bold;
+}
+.inside3-container img {
+  width: 500px; /* 图片最大宽度为容器宽度 */
+  height: auto; /* 高度自动调整，保持原始宽高比例 */
+  display: block; /* 去掉图片底部空白 */
+  margin: 0 auto;
+}
