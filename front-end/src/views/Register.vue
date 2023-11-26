@@ -16,7 +16,7 @@ export default {
       regusernameErrorMsg: '',
       regpasswordErrorMsg: '',
       confirmpasswordErrorMsg: '',
-      regbirthdayErrorMsg: ''
+      regmailErrorMsg: ''
     };
   },
   methods: {
@@ -43,16 +43,17 @@ export default {
         return true;
       }
     },
-    verifyRegbirthday() {
-      const reg = /^\d{4}\/\d{1,2}\/\d{1,2}$/;
-      if (!reg.test(this.regbirthday)) {
-        this.regbirthdayErrorMsg = '请输入正确格式的生日!';
-        return false;
-      } else {
-        this.regbirthdayErrorMsg = '';
-        return true;
-      }
-    },
+    // verifyRegmail() {
+    //   const reg = /^\d{4}\/\d{1,2}\/\d{1,2}$/;
+    //   if (!reg.test(this.regbirthday)) {
+    //     this.regbirthdayErrorMsg = '请输入正确格式的生日!';
+    //     return false;
+    //   } else {
+    //     this.regbirthdayErrorMsg = '';
+    //     return true;
+    //   }
+    //   return true;
+    // },
     goToLogin() {
       this.$router.push('/login');
     },
@@ -69,27 +70,33 @@ export default {
         alert('请再次输入密码');
         return;
       }
-      if (!this.verifyRegbirthday()) {
-        alert('请输入正确格式的生日');
-        return;
-      }
+      // if (!this.verifyRegmail()) {
+      //   alert('请输入正确格式的生日');
+      //   return;
+      // }
       if (!this.isChecked) {
         alert('请勾选我已阅读并同意');
         return;
       }
+
+      // // 在请求之前输出数据到控制台
+      // console.log("要发送的数据：", {
+      //   username: this.regusername,
+      //   password: this.regpassword,
+      //   mail: this.mail
+      // });
       // 发送AJAX请求
-      axios.post('/register', { //请求对应的接口
+      axios.post('http://localhost:8888/register', { //请求对应的接口
         username: this.regusername,
         password: this.regpassword,
-        birthday: this.regbirthday
       })
           .then(response => {
-            if (response.data.success) {
+            if (response.data.code === 1) {
               alert('已成功注册账号');
               this.$router.push('/login');
             } else {
               // 注册失败
-              alert(response.data.message);
+              alert(response.data.msg);
             }
           })
           .catch(error => {
@@ -115,8 +122,8 @@ export default {
       <span class="msg">{{ regpasswordErrorMsg }}</span>
       <input type="password" v-model="confirmPassword" placeholder="再次输入密码" @input="verifyConfirmpassword">
       <span class="msg">{{ confirmpasswordErrorMsg }}</span>
-      <input type="text" v-model="regbirthday" placeholder="输入你的生日(格式为‘年/月/日’)" @input="verifyRegbirthday">
-      <span class="msg">{{ regbirthdayErrorMsg }}</span>
+<!--      <input type="text" v-model="regbirthday" placeholder="输入你的邮箱" @input="verifyRegmail">-->
+<!--      <span class="msg">{{ regbirthdayErrorMsg }}</span>-->
       <div class="checkbox">
         <input type="checkbox" id="terms-checkbox" v-model="isChecked">
         <label for="terms-checkbox">

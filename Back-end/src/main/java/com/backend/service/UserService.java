@@ -11,4 +11,12 @@ public interface UserService {
      * @return
      */
     User login(User user);
+
+    /**
+     * 用户注册
+     *
+     * @param user
+     * @return
+     */
+    int register(User user);
 }
